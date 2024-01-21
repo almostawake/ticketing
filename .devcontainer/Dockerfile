@@ -19,4 +19,4 @@ mkdir /data/db
 mongod &
 
 # Start our application
-node 
+node server
