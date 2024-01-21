@@ -22,4 +22,4 @@ COPY .devcontainer/start.sh /start.sh
 RUN chmod +x /start.sh
 
 # Set the script (which starts mongodb, does an npm install and then kicks off server.js)
-CMD ["/start.sh"] 
+CMD ["start.sh"] 
