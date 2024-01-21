@@ -1,3 +1,3 @@
-sudo mongd &
+sudo mongod &
 npm install
 node server
