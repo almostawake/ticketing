@@ -15,3 +15,5 @@ RUN wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1
 # Create the default Mongo DB database folder
 RUN mkdir -p /data/db
 
+# Kick off mongo, npm install, node server
+CMD [".devcontainer/start.sh"]
