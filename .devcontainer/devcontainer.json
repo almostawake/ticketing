@@ -5,5 +5,5 @@
     "terminal.integrated.shell.linux": "/bin/bash"
   },
   "forwardPorts": [27017],
-  "remoteUser": "vscode"
+  "remoteUser": "codespace"
 }
