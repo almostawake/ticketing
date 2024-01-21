@@ -1,8 +1,8 @@
 {
   "name": "Ticketing Dev",
   "dockerFile": "Dockerfile",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "forwardPorts": [27017]
+  "forwardPorts": [27017],
+  "hostRequirements": {
+    "storage": "8gb"
+  }
 }
