@@ -10,11 +10,8 @@ RUN wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1
     sudo apt update && \
     sudo apt install -y mongodb-org && \
     sudo apt-get clean && \
-    sudo rm -rf /var/lib/apt/lists/*
+    sudo rm -rf /var/lib/apt/lists/* && \
+    mkdir -p /data/db
 
-# Create the default Mongo DB database folder
-RUN mkdir -p /data/db
-
-# Kick off mongo, npm install, node server
-# RUN chmod +x start.sh
+# Kick off start.sh
 CMD ["sh", "~/.devcontainer/start.sh"]
