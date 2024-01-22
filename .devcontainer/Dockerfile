@@ -12,6 +12,9 @@ RUN wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/* && \
     mkdir -p /data/db
+    
+# Set the working directory
+WORKDIR /workspaces/ticketing
 
 # Kick off start.sh
 CMD ["sh", "/workspaces/ticketing/.devcontainer/start.sh"]
