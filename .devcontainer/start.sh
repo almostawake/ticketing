@@ -1,9 +1,12 @@
 #!/bin/bash
-echo "starting mongod in background.." | tee /dev/tty
+pwd > /workspaces/ticketing/info.txt
+whoami >> /workspaces/ticketing/info.txt
+
+echo "starting mongod in background.." 
 sudo mongod &
 
-echo "running npm install" | tee /dev/tty
+echo "running npm install" 
 npm install 
 
-echo "starting node server here, ^C to stop it manually" | tee /dev/tty
+echo "starting node serverin the background" 
 node server &
