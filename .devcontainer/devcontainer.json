@@ -1,5 +1,7 @@
 {
   "name": "Ticketing Dev",
   "dockerFile": "Dockerfile",
-  "forwardPorts": [2222, 3001] // 27017 for Mongo when that works
+  "forwardPorts": [2222, 3001],
+  "postStartCommand": "/workspaces/ticketing/.devcontainer/start.sh"
+
 }
