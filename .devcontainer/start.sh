@@ -1,5 +1,5 @@
 #!/bin/bash
-cho "starting mongod in background.." | tee /dev/tty
+echo "starting mongod in background.." | tee /dev/tty
 sudo mongod &
 
 echo "running npm install" | tee /dev/tty
