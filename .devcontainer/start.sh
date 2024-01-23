@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "starting mongod in background.." 2>&1
 sudo mongod &
 
