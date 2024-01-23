@@ -7,6 +7,6 @@
   "name": "Ticketing Dev/Demo",
   "dockerFile": "Dockerfile",
   "forwardPorts": [2222, 3001],
-  "postStartCommand": "$CODESPACE_VSCODE_FOLDER/.devcontainer/start.sh"
+  "postStartCommand": "/workspaces/ticketing/.devcontainer/start.sh"
 
 }
