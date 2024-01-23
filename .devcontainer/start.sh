@@ -6,4 +6,4 @@ echo "running npm install" | tee /dev/tty
 npm install 
 
 echo "starting node server here, ^C to stop it manually" | tee /dev/tty
-node server | tee /dev/tty
+node server &
