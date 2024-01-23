@@ -1,7 +1,12 @@
+// Be careful .. 
+// the default user is "node" with $HOME in /home/node
+// but current directory on login is /workspaces/ticketing
+// $CODESPACE_VSCODE_FOLDER points to /workspaces/ticketing
+
 {
-  "name": "Ticketing Dev",
+  "name": "Ticketing Dev/Demo",
   "dockerFile": "Dockerfile",
   "forwardPorts": [2222, 3001],
-  "postStartCommand": "/workspaces/ticketing/.devcontainer/start.sh"
+  "postStartCommand": "$CODESPACE_VSCODE_FOLDER/.devcontainer/start.sh"
 
 }

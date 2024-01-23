@@ -1,6 +1,8 @@
-pwd > /workspaces/ticketing/info.txt
-whoami >> /workspaces/ticketing/info.txt
-cd /workspaces/ticketing
+echo "starting mongod in background.."
 sudo mongod &
+
+echo "running npm install"
 npm install
+
+echo "starting node server here, ^C to stop it manually"
 node server
