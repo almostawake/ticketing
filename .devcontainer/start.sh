@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "starting mongod in background.." 2>&1
+cho "starting mongod in background.." | tee /dev/tty
 sudo mongod &
 
-echo "running npm install" 2>&1
-npm install
+echo "running npm install" | tee /dev/tty
+npm install 
 
-echo "starting node server here, ^C to stop it manually" 2>&1
-node server 2>&1
+echo "starting node server here, ^C to stop it manually" | tee /dev/tty
+node server | tee /dev/tty
