@@ -7,5 +7,5 @@
   "name": "Ticketing Dev/Demo",
   "dockerFile": "Dockerfile",
   "forwardPorts": [2222, 3001],
-  "postStartCommand": "(sudo mongod & cd /workspaces/ticketing && npm install && node server.js &) > /workspace/postStartLog.txt 2>&1"
+  "postStartCommand": "(sudo mongod & cd /workspaces/ticketing && npm install && node server.js &) > /workspaces/ticketing/postCreateCommand.log 2>&1"
 }
